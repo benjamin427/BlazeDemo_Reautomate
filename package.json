@@ -1,0 +1,35 @@
+{
+  "name": "ci_cd_matrix_2",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/benjamin427/DemoBlaze_Reautomate#readme",
+  "bugs": {
+    "url": "https://github.com/benjamin427/DemoBlaze_Reautomate/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjamin427/DemoBlaze_Reautomate.git"
+  },
+  "license": "ISC",
+  "author": "Benjamin Saint Elien",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open:chrome": " cypress open --e2e --browser chrome",
+    "cypress:open:firefox": "cypress open --e2e --browser firefox",
+    "cypress:open:edge": "cypress open --e2e --browser edge",
+    "cypress:run:chrome": "cypress run --spec=cypress/features/* --e2e --browser chrome",
+    "cypress:run:firefox": "cypress run --spec=cypress/features/* --e2e --browser firefox",
+    "cypress:run:edge": "cypress run --spec=cypress/features/* --e2e --browser edge"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^23.2.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.6",
+    "chai": "^6.2.0",
+    "cypress": "^15.4.0",
+    "mocha": "^11.7.4"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^2.0.1"
+  }
+}
